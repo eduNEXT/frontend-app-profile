@@ -51,7 +51,7 @@
     "@fortawesome/react-fontawesome": "0.1.8",
     "babel-polyfill": "6.26.0",
     "classnames": "2.2.6",
-    "email-prop-type": "1.1.7",
+    "email-prop-type": "3.0.1",
     "font-awesome": "4.7.0",
     "form-urlencoded": "3.0.2",
     "history": "4.7.2",
