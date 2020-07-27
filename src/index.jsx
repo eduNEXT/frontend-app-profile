@@ -16,7 +16,11 @@ import configureStore from './data/configureStore';
 
 import './index.scss';
 import './assets/favicon.ico';
+import * as Sentry from '@sentry/react';
 
+if (process.env.NODE_ENV == 'production'){
+	Sentry.init({dsn: process.env.SENTRY_DSN});
+}
 subscribe(APP_READY, () => {
   ReactDOM.render(
     <AppProvider store={configureStore()}>
