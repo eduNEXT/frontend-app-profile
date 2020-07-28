@@ -2,7 +2,11 @@ const glob = require('glob');
 const PurgecssPlugin = require('purgecss-webpack-plugin');
 const { createConfig } = require('@edx/frontend-build');
 
+const ASSET_PATH = "/profile/";
 module.exports = createConfig('webpack-prod', {
+  output: {
+    publicPath: ASSET_PATH,
+  },
   plugins: [
     // Scan files for class names and ids and remove unused css
     new PurgecssPlugin({
