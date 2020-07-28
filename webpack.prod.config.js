@@ -2,9 +2,12 @@ const glob = require('glob');
 const PurgecssPlugin = require('purgecss-webpack-plugin');
 const { createConfig } = require('@edx/frontend-build');
 
+const path = require('path');
+
 const ASSET_PATH = "/profile/";
 module.exports = createConfig('webpack-prod', {
   output: {
+    path: path.resolve(__dirname, 'dist/profile'),
     publicPath: ASSET_PATH,
   },
   plugins: [
