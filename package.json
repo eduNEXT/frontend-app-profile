@@ -42,7 +42,7 @@
   "dependencies": {
     "@edx/frontend-component-footer": "10.0.9",
     "@edx/frontend-component-header": "2.0.5",
-    "@edx/frontend-platform": "1.1.14",
+    "@edx/frontend-platform": "git+https://github.com/edunext/frontend-platform.git#lmm/subdirectory.build",
     "@edx/paragon": "7.1.3",
     "@fortawesome/fontawesome-svg-core": "1.2.25",
     "@fortawesome/free-brands-svg-icons": "5.7.2",
@@ -79,7 +79,7 @@
   "devDependencies": {
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-angular": "8.2.0",
-    "@edx/frontend-build": "2.0.6",
+    "@edx/frontend-build": "git+https://github.com/edunext/frontend-build.git#lmm/subdirectory",
     "codecov": "3.6.5",
     "enzyme": "3.10.0",
     "enzyme-adapter-react-16": "1.15.2",
