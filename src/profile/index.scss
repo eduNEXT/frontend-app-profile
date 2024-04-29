@@ -96,8 +96,8 @@
 
       .btn {
         color: var(--pgn-color-white);
-        background: transparent;
-        border-color: transparent;
+        background: transparent !important;
+        border-color: transparent !important;
         margin: 0;
       }
     }
